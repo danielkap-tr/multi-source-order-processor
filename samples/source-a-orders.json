@@ -1,0 +1,32 @@
+[
+  {
+    "orderId": "ORD-10001",
+    "customerId": "CUST-501",
+    "customerName": "John Smith",
+    "country": "US",
+    "orderDate": "2026-09-01T10:30:00",
+    "productCode": "P100",
+    "quantity": 2,
+    "unitPrice": 125.50
+  },
+  {
+    "orderId": "ORD-10002",
+    "customerId": "CUST-509",
+    "customerName": "Emily Clarke",
+    "country": "GB",
+    "orderDate": "2026-09-01T14:05:12",
+    "productCode": "P315",
+    "quantity": 1,
+    "unitPrice": 49.99
+  },
+  {
+    "orderId": "ORD-10003",
+    "customerId": "CUST-777",
+    "customerName": "Broken Order",
+    "country": "FR",
+    "orderDate": "2026-09-01T15:00:00",
+    "productCode": "P900",
+    "quantity": 4,
+    "unitPrice": 10.00
+  }
+]

@@ -1,0 +1,27 @@
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local run output
+/out/
+*.out.json
+
+# JVM crash / shade artifacts
+hs_err_pid*.log
+replay_pid*.log
+*.dump
+*.dumpstream
+dependency-reduced-pom.xml
