@@ -25,3 +25,4 @@ replay_pid*.log
 *.dump
 *.dumpstream
 dependency-reduced-pom.xml
+debug.log
