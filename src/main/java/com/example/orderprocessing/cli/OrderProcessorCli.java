@@ -36,6 +36,7 @@ import java.util.stream.Stream;
 public final class OrderProcessorCli {
 
     public static void main(String[] args) {
+        configureLogging();
         try {
             Args parsed = Args.parse(args);
             int exitCode = new OrderProcessorCli().run(parsed);
@@ -45,6 +46,18 @@ public final class OrderProcessorCli {
             System.err.println();
             System.err.println(Args.usage());
             System.exit(2);
+        }
+    }
+
+    /**
+     * Give java.util.logging a compact, locale-stable one-line format
+     * ("2026-09-09 02:11:24 WARNING message") instead of its two-line, locale-dependent
+     * default. Must run before the first log record is emitted.
+     */
+    private static void configureLogging() {
+        if (System.getProperty("java.util.logging.SimpleFormatter.format") == null) {
+            System.setProperty("java.util.logging.SimpleFormatter.format",
+                    "%1$tF %1$tT %4$-7s %5$s%6$s%n");
         }
     }
 
